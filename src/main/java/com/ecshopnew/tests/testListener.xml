@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite" parallel="false">
+<listeners>
+ <listener class-name="com.ecshopnew.tests.TestListenClass"></listener>
+ <listener class-name="com.ecshopnew.tests.RetryListener"></listener>
+</listeners>
+ <test name="Test2">
+    <classes>
+      <class name="com.ecshopnew.tests.TestLogin"/>
+    </classes>
+  </test> <!-- Test --> 
+</suite> <!-- Suite -->
